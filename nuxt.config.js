@@ -29,12 +29,12 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/semantic-ui-vue.js'],
+  plugins: [],
 
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [['semantic-ui-vue/nuxt', { css: false }]],
 
   /*
    ** Build configuration
