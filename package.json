@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "now-build": "nuxt generate",
+    "now-build": "npm run semantic:build && nuxt generate",
     "semantic:build": "cd .semantic && gulp build-css build-assets",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
