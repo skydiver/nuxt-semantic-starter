@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-demo",
+  "name": "nuxt-semantic-starter",
   "version": "1.0.0",
-  "description": "nuxtjs demo project",
+  "description": "Nuxt.js starter using Semantic UI",
   "author": "Martín M.",
   "private": true,
   "scripts": {

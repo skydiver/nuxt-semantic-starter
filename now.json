@@ -1,10 +1,13 @@
 {
-    "version": 2,
-    "name": "nuxtjs-sandbox",
-    "builds": [
-        {
-            "src": "package.json",
-            "use": "@now/static-build"
-        }
-    ]
+  "version": 2,
+  "name": "nuxt-starters",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "alias": [
+    "nuxt-semantic-starter.now.sh"
+  ]
 }
