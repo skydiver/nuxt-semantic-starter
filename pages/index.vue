@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <h1>nutxjs + Semantic UI!</h1>
+      <h1>nutxjs + Fomantic-UI!</h1>
     </div>
     <div>
       <sui-button primary>Primary</sui-button>
