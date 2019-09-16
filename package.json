@@ -11,33 +11,34 @@
     "generate": "nuxt generate",
     "now-build": "npm run semantic:build && nuxt generate",
     "semantic:build": "cd .semantic && gulp build-css build-assets",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "cross-env": "^5.2.1",
     "nuxt": "^2.9.2",
     "semantic-ui-vue": "^0.8.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.1.2",
+    "@nuxtjs/eslint-module": "^1.1.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
-    "eslint-config-standard": ">=14.1.0",
-    "eslint-loader": "^3.0.0",
-    "eslint-plugin-import": ">=2.18.2",
-    "eslint-plugin-jest": ">=22.17.0",
-    "eslint-plugin-node": ">=10.0.0",
+    "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-nuxt": ">=0.4.3",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-promise": ">=4.2.1",
-    "eslint-plugin-standard": ">=4.0.1",
-    "eslint-plugin-vue": "^5.2.3",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
     "node-sass": "^4.12.0",
-    "nodemon": "^1.19.2",
     "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
     "semantic-ui": "^2.4.2"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
